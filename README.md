@@ -5,7 +5,7 @@ A full-stack e-portfolio website developed as an academic project at the Catholi
 
 The project provides two personal portfolio websites where users can showcase their profiles, skills, and projects. It also includes user authentication, portfolio management, contact forms, and job application functionality.
 
-## ✨ Features
+##  Features
 
 - Personal portfolio pages for Seham and Amelia
 - Responsive website interface
@@ -17,7 +17,7 @@ The project provides two personal portfolio websites where users can showcase th
 - MySQL database integration
 - PHP backend APIs
 
-## 🛠️ Technologies
+##  Technologies
 
 | Technology | Purpose |
 |---|---|
@@ -57,7 +57,7 @@ seham-amelia-eportfolio/
 
 *The structure above is a reference. Update it to match the actual repository files.*
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -79,7 +79,7 @@ seham-amelia-eportfolio/
 http://localhost/seham-amelia-eportfolio/
 ```
 
-## 🗄️ Database
+##  Database
 
 The project uses a MySQL database named `portfolio_db`.
 
@@ -92,12 +92,12 @@ The database includes tables for:
 
 The database setup script creates the database and required tables.
 
-## 👩‍💻 Contributors
+##  Contributors
 
 - **Seham Elias Qasim** — Backend Development and Database Integration
 - **Amelia** — Frontend Development
 
-## 🎓 Academic Project
+##  Academic Project
 
 Computer Science Department  
 Catholic University in Erbil  
