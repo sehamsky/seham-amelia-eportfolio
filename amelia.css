@@ -1,0 +1,180 @@
+/* Amelia Specific Styles */
+
+/* Background Orbs */
+.amelia-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 0; pointer-events: none; overflow: hidden;
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.4;
+  animation: floatOrb 15s infinite alternate ease-in-out;
+}
+.orb-1 { width: 400px; height: 400px; background: rgba(187, 134, 252, 0.4); top: -100px; left: -100px; }
+.orb-2 { width: 500px; height: 500px; background: rgba(255, 121, 198, 0.3); bottom: -200px; right: -100px; animation-delay: -5s; }
+.orb-3 { width: 300px; height: 300px; background: rgba(139, 233, 253, 0.3); top: 40%; left: 30%; animation-delay: -10s; }
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -50px) scale(1.1); }
+  100% { transform: translate(-30px, 20px) scale(0.9); }
+}
+
+.amelia-nav a:hover {
+  color: var(--accent-amelia);
+}
+.amelia-nav a::after {
+  background: var(--accent-amelia);
+}
+
+.amelia-hero {
+  min-height: 100vh;
+  position: relative;
+  z-index: 10;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+}
+.subtitle-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(187, 134, 252, 0.1);
+  border: 1px solid var(--accent-amelia-glow);
+  color: var(--accent-amelia);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-family: var(--font-heading);
+  margin-bottom: 30px;
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.amelia-title {
+  font-size: 5rem; letter-spacing: -2px; margin-bottom: 20px;
+}
+.amelia-title .highlight {
+  background: linear-gradient(135deg, var(--accent-amelia), #ff79c6);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.amelia-subtitle {
+  font-size: 1.6rem; font-weight: 300; color: #fff; margin-bottom: 25px;
+}
+.amelia-intro {
+  font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;
+}
+
+/* About Wrap */
+.amelia-about-wrap {
+  display: flex; gap: 40px; padding: 50px; align-items: center;
+}
+.amelia-text { flex: 1.5; }
+.amelia-text h3 {
+  font-size: 2.2rem; margin-bottom: 20px;
+  background: linear-gradient(to right, var(--accent-amelia), #fff);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.amelia-text p {
+  font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 20px;
+}
+.amelia-image-box {
+  flex: 1; height: 300px; background: rgba(0,0,0,0.3); border-radius: 20px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px dashed var(--accent-amelia-glow);
+  transition: transform 0.5s;
+}
+.amelia-image-box:hover { transform: rotate(5deg) scale(1.05); }
+
+/* Skills Grid */
+.amelia-skills-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;
+}
+.amelia-skill-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--glass-border);
+  padding: 30px 20px; border-radius: 16px; text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.amelia-skill-card i {
+  font-size: 3rem; color: var(--accent-amelia); margin-bottom: 15px; display: block;
+}
+.amelia-skill-card span { font-weight: 500; font-family: var(--font-heading); }
+.amelia-skill-card:hover {
+  transform: translateY(-10px);
+  background: rgba(187, 134, 252, 0.1);
+  border-color: var(--accent-amelia);
+  box-shadow: 0 10px 20px var(--accent-amelia-glow);
+}
+
+/* Projects */
+.amelia-projects {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 30px;
+}
+.amelia-proj-card {
+  display: flex; gap: 20px; padding: 25px; transition: 0.3s;
+}
+.amelia-proj-card:hover {
+  transform: translateX(10px);
+  box-shadow: -10px 10px 30px rgba(0,0,0,0.4);
+}
+.proj-visual {
+  width: 100px; height: 100px; border-radius: 16px; background: rgba(187, 134, 252, 0.1);
+  display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: var(--accent-amelia); flex-shrink: 0;
+}
+.proj-details h3 { font-size: 1.4rem; margin-bottom: 10px; }
+.proj-details p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px; }
+.proj-tech span {
+  display: inline-block; font-size: 0.75rem; padding: 4px 10px;
+  border: 1px solid var(--glass-border); border-radius: 20px; margin-right: 5px; color: #fff;
+}
+
+/* Timeline Cards */
+.amelia-cards {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+}
+.amelia-card {
+  padding: 40px 30px; border-top: 4px solid var(--accent-amelia);
+  transition: transform 0.4s;
+}
+.amelia-card:hover { transform: translateY(-15px); }
+.amelia-card .year {
+  font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: rgba(255,255,255,0.1);
+  display: block; margin-bottom: 10px;
+}
+.amelia-card h4 { font-size: 1.3rem; margin-bottom: 15px; }
+.amelia-card p { color: var(--text-secondary); font-size: 0.95rem; }
+
+/* Contact Container */
+.amelia-contact {
+  display: flex; gap: 0; overflow: hidden; padding: 0;
+}
+.form-side { flex: 2; padding: 50px; }
+.info-side { flex: 1; background: rgba(187, 134, 252, 0.05); padding: 50px; border-left: 1px solid var(--glass-border); }
+.input-row { display: flex; gap: 15px; }
+.amelia-input {
+  width: 100%; padding: 15px 20px; background: rgba(0,0,0,0.3); border: none; border-bottom: 2px solid var(--glass-border);
+  color: #fff; margin-bottom: 25px; font-family: var(--font-body); font-size: 1rem; transition: 0.3s;
+}
+.amelia-input:focus { outline: none; border-color: var(--accent-amelia); background: rgba(0,0,0,0.5); }
+.info-side h3 { font-size: 1.8rem; margin-bottom: 15px; }
+.amelia-socials { display: flex; gap: 15px; flex-wrap: wrap; }
+.amelia-socials a { width: 50px; height: 50px; border-radius: 12px; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border);
+  display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: 0.4s; }
+.amelia-socials a:hover {
+  background: var(--accent-amelia); border-color: var(--accent-amelia); color: white; transform: rotate(10deg);
+}
+
+@media(max-width: 900px) {
+  .amelia-about-wrap { flex-direction: column; }
+  .amelia-image-box { width: 100%; }
+  .amelia-projects, .amelia-cards { grid-template-columns: 1fr; }
+  .amelia-contact { flex-direction: column; }
+  .info-side { border-left: none; border-top: 1px solid var(--glass-border); }
+  .amelia-proj-card { flex-direction: column; }
+  .proj-visual { margin-bottom: 15px; width: 80px; height: 80px; font-size: 2rem; }
+}

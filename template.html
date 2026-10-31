@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Unique styles for the custom template */
+    .template-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
+
+    .custom-title {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .custom-subtitle {
+      font-size: 1.5rem;
+      color: var(--accent-global);
+      margin-bottom: 20px;
+    }
+
+    .img-frame {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <div class="logo"><a href="index.html" style="color:white; text-decoration: none;">S<span>&</span>A</a> <span
+          style="font-weight: 300; font-size:1rem; margin-left:10px;">/</span> <span
+          style="color: var(--accent-global); font-weight: 400; margin-left:10px; font-size:1.2rem;"
+          id="navName">User</span></div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="template-hero" id="home">
+    <div class="container hero-content">
+      <h1 class="custom-title">Hi, I'm <span class="highlight" id="heroName"
+          style="color: var(--accent-global);">User</span></h1>
+      <h2 class="custom-subtitle" id="heroRole">Role Placeholder</h2>
+      <p class="hero-intro" id="heroDesc" style="max-width: 600px; font-size: 1.1rem; color: var(--text-secondary);">
+        Description placeholder.
+      </p>
+
+      <div class="hero-buttons" style="margin-top: 30px;">
+        <a href="#about" class="btn btn-primary">Learn More</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container reveal">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <p>My background and what I do.</p>
+    </div>
+    <div class="about-grid">
+      <div class="glass-panel"
+        style="aspect-ratio: 1; border-radius: 20px; display:flex; align-items:center; justify-content:center; font-size: 5rem; color: var(--accent-global);">
+        <span id="aboutInitial">U</span>
+      </div>
+      <div class="about-text">
+        <h3 id="aboutRole">Role</h3>
+        <p id="aboutDesc">Detailed description here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container reveal">
+    <div class="section-header">
+      <h2>Technical Skills</h2>
+      <p>My main areas of expertise.</p>
+    </div>
+    <div class="skills-container glass-panel" style="padding: 40px;">
+      <div class="profile-skills" id="skillsList"
+        style="display:flex; flex-wrap:wrap; gap: 15px; justify-content:center;">
+        <!-- Skills go here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container reveal">
+    <div class="section-header">
+      <h2>Get In Touch</h2>
+      <p>Let's collaborate on the next big thing.</p>
+    </div>
+    <div class="glass-panel" style="max-width: 600px; margin: 0 auto; padding: 40px; text-align: center;">
+      <h3>Contact Information</h3>
+      <p>Reach out to discuss opportunities.</p>
+      <div style="margin-top: 20px;">
+        <a href="mailto:example@example.com" class="btn btn-primary">Email Me</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Custom Portfolio. Back to <a href="index.html" style="color: var(--accent-global);">Main
+          Portfolio</a>.</p>
+    </div>
+  </footer>
+
+  <script src="template.js"></script>
+</body>
+
+</html>

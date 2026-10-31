@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amelia | Portfolio</title>
+  <meta name="description" content="Amelia's Personal Portfolio - Frontend Developer, UI/UX Creative, Web Innovator">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="amelia.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Animated Glowing Orbs Background -->
+  <div class="amelia-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <header id="navbar">
+    <div class="container nav-container">
+      <div class="logo"><a href="index.html" style="color:white; text-decoration: none;">S<span>&</span>A</a> <span style="font-weight: 300; font-size:1rem; margin-left:10px;">/</span> <span style="color: var(--accent-amelia); font-weight: 400; margin-left:10px; font-size:1.2rem;">Amelia</span></div>
+      <nav class="nav-links amelia-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Creative Stack</a>
+        <a href="#projects">Showcase</a>
+        <a href="#experience">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="amelia-hero" id="home">
+    <div class="container hero-content amelia-hero-content">
+      <div class="subtitle-badge">Welcome to my space</div>
+      <h1 class="amelia-title">I am <span class="highlight">Amelia</span></h1>
+      <h2 class="amelia-subtitle">Frontend Developer & UI/UX Creative Innovator</h2>
+      <p class="amelia-intro">Crafting visually stunning, highly interactive, and accessible web experiences. Where design meets engineering.</p>
+      
+      <div class="hero-buttons amelia-btns" style="margin-top: 30px;">
+        <a href="#projects" class="btn btn-amelia">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        <a href="#" class="btn btn-outline download-cv"><i class="fa-solid fa-file-pdf" style="margin-right: 8px;"></i> Grab My CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container reveal amelia-section">
+    <div class="section-header">
+      <h2>My Creative Vision</h2>
+      <p>Combining aesthetics with seamless functionality.</p>
+    </div>
+    <div class="amelia-about-wrap glass-panel">
+      <div class="amelia-text">
+        <h3>Designing the Future of the Web</h3>
+        <p>As a frontend developer with a deep passion for UI/UX, I believe that every interaction on a website should be intuitive, smooth, and memorable. I specialize in turning complex wireframes into fully functional, high-performance web applications.</p>
+        <p>My toolkit is constantly evolving, blending the latest React and Next.js paradigms with modern CSS architectures and fluid animations using Framer and tailored CSS keyframes.</p>
+      </div>
+      <div class="amelia-image-box">
+        <i class="fa-solid fa-pen-nib" style="font-size: 5rem; color: var(--accent-amelia);"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container reveal amelia-section">
+    <div class="section-header">
+      <h2>Creative Stack</h2>
+      <p>My weapons of choice for building modern interfaces.</p>
+    </div>
+    <div class="amelia-skills-grid">
+      <div class="amelia-skill-card">
+        <i class="fa-brands fa-react"></i>
+        <span>React & Next.js</span>
+      </div>
+      <div class="amelia-skill-card">
+        <i class="fa-brands fa-js"></i>
+        <span>JavaScript / TS</span>
+      </div>
+      <div class="amelia-skill-card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <span>Advanced CSS</span>
+      </div>
+      <div class="amelia-skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <span>Semantic HTML5</span>
+      </div>
+      <div class="amelia-skill-card">
+        <i class="fa-brands fa-figma"></i>
+        <span>Figma & UI/UX</span>
+      </div>
+      <div class="amelia-skill-card">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <span>Micro-Animations</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container reveal amelia-section">
+    <div class="section-header">
+      <h2>Showcase Highlights</h2>
+      <p>A curated gallery of my frontend masterpieces.</p>
+    </div>
+    <div class="amelia-projects">
+      <!-- Project 1 -->
+      <div class="amelia-proj-card glass-panel">
+        <div class="proj-visual"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="proj-details">
+          <h3>Frontend Portfolio Design</h3>
+          <p>A multi-page portfolio demonstrating sophisticated layout techniques and custom CSS variables for dark/light mode toggling.</p>
+          <div class="proj-tech"><span>CSS Variables</span><span>HTML5</span></div>
+          <a href="#" class="btn btn-outline" style="border-radius: 10px; margin-top: 15px;">Explore</a>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="amelia-proj-card glass-panel">
+        <div class="proj-visual" style="background: rgba(255, 121, 198, 0.1);"><i class="fa-solid fa-object-ungroup" style="color:#ff79c6;"></i></div>
+        <div class="proj-details">
+          <h3>UI/UX Web Interface Project</h3>
+          <p>A high-fidelity prototype converted into a living web interface focusing on accessibility and seamless user flow.</p>
+          <div class="proj-tech"><span>Figma</span><span>Accessibility</span></div>
+          <a href="#" class="btn btn-outline" style="border-radius: 10px; margin-top: 15px;">Explore</a>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="amelia-proj-card glass-panel">
+        <div class="proj-visual" style="background: rgba(139, 233, 253, 0.1);"><i class="fa-solid fa-bolt" style="color:#8be9fd;"></i></div>
+        <div class="proj-details">
+          <h3>Interactive Landing Page</h3>
+          <p>A heavily animated landing page built for marketing purposes, utilizing intersection observers and scroll-based interactions.</p>
+          <div class="proj-tech"><span>Vanilla JS</span><span>CSS Animations</span></div>
+          <a href="#" class="btn btn-outline" style="border-radius: 10px; margin-top: 15px;">Explore</a>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="amelia-proj-card glass-panel">
+        <div class="proj-visual" style="background: rgba(241, 250, 140, 0.1);"><i class="fa-brands fa-react" style="color:#f1fa8c;"></i></div>
+        <div class="proj-details">
+          <h3>React Web App Dashboard</h3>
+          <p>A comprehensive admin dashboard offering data visualization, state management, and real-time UI updates.</p>
+          <div class="proj-tech"><span>ReactJS</span><span>State Mngmnt</span></div>
+          <a href="#" class="btn btn-outline" style="border-radius: 10px; margin-top: 15px;">Explore</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container reveal amelia-section">
+    <div class="section-header">
+      <h2>Creative Journey</h2>
+      <p>How I evolved from graphic design into frontend wizardry.</p>
+    </div>
+    <div class="amelia-cards">
+      <div class="amelia-card glass-panel">
+        <span class="year">2026</span>
+        <h4>Next.js & SSR Adoption</h4>
+        <p>Focused on performance. Transitioned heavy single-page apps to Server-Side Rendering via Next.js for blazing fast load times.</p>
+      </div>
+      <div class="amelia-card glass-panel">
+        <span class="year">2025</span>
+        <h4>UI/UX Hybrid</h4>
+        <p>Mastered Figma, allowing me to own the entire product pipeline from visual conceptualization to precise final code structure.</p>
+      </div>
+      <div class="amelia-card glass-panel">
+        <span class="year">2024</span>
+        <h4>Frontend Fundamentals</h4>
+        <p>Built a solid foundation in JS and semantic HTML, focusing deeply on responsive web design logic across all viewports.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container reveal amelia-section">
+    <div class="section-header">
+      <h2>Start a Conversation</h2>
+      <p>Looking to build something beautiful? Let's talk.</p>
+    </div>
+    <div class="amelia-contact glass-panel">
+      <div class="form-side">
+        <form onsubmit="submitAmeliaContact(event)">
+          <div class="input-row">
+            <input type="text" placeholder="Name" required class="amelia-input">
+            <input type="email" placeholder="Email" required class="amelia-input">
+          </div>
+          <input type="text" placeholder="Subject" required class="amelia-input">
+          <textarea placeholder="Tell me about your amazing project..." rows="4" required class="amelia-input"></textarea>
+          <button type="submit" class="btn btn-amelia" style="width: 100%; border-radius: 12px;">Shoot Message <i class="fa-solid fa-paper-plane" style="margin-left: 10px;"></i></button>
+        </form>
+      </div>
+      <div class="info-side">
+        <h3>Direct Links</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 20px;">Prefer direct messaging? Find me on these platforms.</p>
+        <div class="amelia-socials">
+          <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="#"><i class="fa-brands fa-behance"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div style="margin-top: 30px;">
+          <a href="mailto:amelia@example.com" style="color: var(--accent-amelia); text-decoration: underline;">amelia@example.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Amelia. Back to <a href="index.html" style="color: var(--accent-amelia);">Main Portfolio</a>.</p>
+    </div>
+  </footer>
+
+  <!-- Chatbot HTML -->
+  <button class="chatbot-toggle" id="chatToggle" style="background: linear-gradient(135deg, var(--accent-amelia), #ff79c6);">
+    <i class="fa-solid fa-comment-dots"></i>
+  </button>
+  <div class="chatbot-window" id="chatWindow" style="border-radius: 20px 20px 5px 20px;">
+    <div class="chat-header" style="border-bottom: 1px solid var(--accent-amelia-glow);">
+      <h4><div class="dot" style="background: var(--accent-amelia);"></div> Amelia's Bot</h4>
+      <button id="closeChat" style="background: none; border: none; color: white; cursor: pointer;"><i class="fa-solid fa-close"></i></button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-message bot">Hello beautiful human! I can answer anything about Amelia's design logic and frontend skills.</div>
+      <div class="typing-indicator" id="typingIndicator">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Curious about something?" autocomplete="off" style="border-radius: 12px;">
+      <button id="chatSend" style="background: var(--accent-amelia); color: #fff; border-radius: 12px;"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <script src="amelia.js"></script>
+  <script src="chatbot/main.js"></script>
+</body>
+</html>

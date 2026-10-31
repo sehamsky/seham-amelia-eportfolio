@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seham & Amelia | E-Portfolio</title>
+  <meta name="description"
+    content="Premium E-Portfolio showcasing the work and journey of two passionate software engineers and developers, Seham and Amelia.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Floating Background Shapes -->
+  <div class="floating-shape"
+    style="top: -100px; left: -100px; width: 400px; height: 400px; background: rgba(69, 162, 158, 0.15);"></div>
+  <div class="floating-shape"
+    style="bottom: 20%; right: -50px; width: 300px; height: 300px; background: rgba(187, 134, 252, 0.15); animation-delay: -5s;">
+  </div>
+
+  <!-- Navbar -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <div class="logo">S<span>&</span>A</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#collab">Collaboration</a>
+        <a href="#projects">Work</a>
+        <a href="#careers">Careers</a>
+        <a href="#" id="authNavBtn" onclick="handleAuthNavClick(event)" style="color: #45a29e; font-weight: bold;">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-content">
+      <h1 class="hero-title">Seham & Amelia</h1>
+      <p class="hero-subtitle">Two passionate technologists showcasing our journey in software engineering, UI/UX, and
+        creative web development.</p>
+      <div class="hero-buttons">
+        <a href="seham.html" class="btn btn-seham">Explore Seham's Profile</a>
+        <a href="amelia.html" class="btn btn-amelia">Discover Amelia's Profile</a>
+        
+      </div>
+
+<div style="margin-top: 20px; display: flex; justify-content: center;">
+  <button class="btn add-btn" onclick="openPortfolioModal()">
+    + Add Your Portfolio
+  </button>
+</div>
+
+</div>
+</section>
+ 
+      <!-- Profiles Section -->
+    
+  <section id="about" class="container reveal">
+    <div class="section-header">
+      <h2>Meet the Developers</h2>
+      <p>A blend of backend logic, frontend creativity, and AI enthusiams.</p>
+    </div>
+    <div class="profiles-grid">
+      <!-- Seham Card -->
+      <div class="glass-panel profile-card seham">
+       <div class="profile-img-placeholder">
+  <img src="Siham.png" alt="Seham">
+</div>
+        <h3>Seham</h3>
+        <div class="profile-role">Computer Science Student & Web Developer</div>
+        <p>Passionate about building scalable web solutions and integrating AI into daily applications.</p>
+        <div class="profile-skills">
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">AI Integration</span>
+        </div>
+        <a href="seham.html" class="btn btn-outline" style="margin-top: 15px;">Sehamsky</a>
+      </div>
+
+      <!-- Amelia Card -->
+      <div class="glass-panel profile-card amelia">
+       <div class="profile-img-placeholder">
+  <img src="Amelia.png" alt="Amelia">
+</div>
+        <h3>Amelia</h3>
+        <div class="profile-role">Frontend Developer & UI/UX Creative</div>
+        <p>Expert in crafting beautiful, engaging, and highly animated digital experiences on the web.</p>
+        <div class="profile-skills">
+          <span class="skill-badge">React & Next.js</span>
+          <span class="skill-badge">UI/UX</span>
+          <span class="skill-badge">Framer</span>
+        </div>
+        <a href="amelia.html" class="btn btn-outline" style="margin-top: 15px;">Amelia</a>
+      </div>
+    </div>
+  </section>
+      
+  
+    </div>
+    <div class="profiles-grid" id="profilesGrid">
+
+    </div>
+  </section>
+
+  <!-- Collaboration Section -->
+  <section id="collab" class="container reveal">
+    <div class="section-header">
+      <h2>Why We Work Together</h2>
+      <p>Combining complementary skills to produce end-to-end premium solutions.</p>
+    </div>
+    <div class="collab-grid">
+      <div class="glass-panel collab-card">
+        <i class="fa-solid fa-code-branch collab-icon"></i>
+        <h3>Full-Stack Synergy</h3>
+        <p>Seham builds robust logical structures and architectures, while Amelia brings them to life visually.</p>
+      </div>
+      <div class="glass-panel collab-card">
+        <i class="fa-solid fa-lightbulb collab-icon"></i>
+        <h3>Creative Problem Solving</h3>
+        <p>We tackle challenges from two angles: computational efficiency and user-centered design.</p>
+      </div>
+      <div class="glass-panel collab-card">
+        <i class="fa-solid fa-rocket collab-icon"></i>
+        <h3>Rapid Development</h3>
+        <p>Dividing domains allows us to iterate swiftly naturally delivering polished projects rapidly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Preview -->
+  <section id="projects" class="container reveal">
+    <div class="section-header">
+      <h2>Featured Works</h2>
+      <p>A glimpse into our combined and individual project highlights.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="glass-panel project-card">
+        <div class="project-img-placeholder">E-Commerce App Mockup</div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Full-Stack</span>
+            <span class="project-tag">Collab</span>
+          </div>
+          <h3>Modern Online Store</h3>
+          <p>A responsive shopping experience with seamless checkout and AI recommendations.</p>
+        </div>
+      </div>
+      <div class="glass-panel project-card">
+        <div class="project-img-placeholder">AI Chatbot Interface</div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">API Integration</span>
+            <span class="project-tag">UI/UX</span>
+          </div>
+          <h3>Smart Portfolio Assistant</h3>
+          <p>An interactive floating bot powered by sophisticated AI models and smooth animations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Opportunities -->
+  <section id="careers" class="container reveal">
+    <div class="section-header">
+      <h2>Career Opportunities</h2>
+      <p>Looking to collaborate with us? We are available for challenging new roles.</p>
+    </div>
+    <div class="jobs-grid">
+      <div class="glass-panel job-card">
+        <div class="job-info">
+          <h3>Full Stack Developer</h3>
+          <div class="job-meta">Open to Offers • Remote or On-site</div>
+          <div class="job-tags">
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">SQL</span>
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="openJobModal('Full Stack Developer')">Apply</button>
+      </div>
+      <div class="glass-panel job-card">
+        <div class="job-info">
+          <h3>Frontend UI Engineer</h3>
+          <div class="job-meta">Open to Offers • Remote</div>
+          <div class="job-tags">
+            <span class="skill-badge">CSS Animations</span>
+            <span class="skill-badge">Next.js</span>
+            <span class="skill-badge">Figma</span>
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="openJobModal('Frontend UI Engineer')">Apply</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Application Modal -->
+<div class="modal-overlay" id="jobModal">
+  <div class="glass-panel modal-content">
+    <button class="close-modal" onclick="closeJobModal()">&times;</button>
+    <h2 style="margin-bottom: 20px;">Apply for Role</h2>
+
+    <form id="jobForm" onsubmit="submitJob(event)">
+      
+      <div class="form-group">
+        <label>Position</label>
+        <input type="text" id="modalJobTitle" name="role" class="form-control" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" name="name" class="form-control" required placeholder="John Doe">
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" required placeholder="john@example.com">
+      </div>
+
+      <div class="form-group">
+        <label>Message / Cover Letter</label>
+        <textarea name="message" class="form-control" required placeholder="Why are you a good fit?"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>CV / Resume</label>
+        <input type="file" name="cv" class="form-control"
+          style="background: transparent; border: none; padding: 0;">
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width: 100%;">
+        Submit Application
+      </button>
+
+    </form>
+  </div>
+</div>
+
+  <!-- Add Portfolio Modal -->
+  <div class="modal-overlay" id="portfolioModal">
+    <div class="glass-panel modal-content">
+      <button class="close-modal" onclick="closePortfolioModal()">&times;</button>
+      <h2 style="margin-bottom: 20px;">Add New Portfolio</h2>
+      <form id="portfolioForm" onsubmit="submitPortfolio(event)">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="newPortName" class="form-control" required placeholder="e.g. Alex Doe">
+        </div>
+        <div class="form-group">
+          <label>Role</label>
+          <input type="text" id="newPortRole" class="form-control" required placeholder="e.g. Full Stack Developer">
+        </div>
+        <div class="form-group">
+          <label>Short Description</label>
+          <textarea id="newPortDesc" class="form-control" required placeholder="A brief about yourself..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Skills (comma separated)</label>
+          <input type="text" id="newPortSkills" class="form-control" required placeholder="e.g. React, Node.js, Python">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Add Portfolio</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Auth Modal -->
+  <div class="modal-overlay" id="authModal">
+    <div class="glass-panel modal-content" style="max-width: 400px;">
+      <button class="close-modal" onclick="closeAuthModal()">&times;</button>
+      <h2 style="margin-bottom: 20px;" id="authModalTitle">Welcome Back</h2>
+      <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <button class="btn btn-primary" id="loginTabBtn" style="flex:1;" onclick="switchAuthTab('login', event)">Login</button>
+        <button class="btn btn-outline" id="registerTabBtn" style="flex:1;" onclick="switchAuthTab('register', event)">Register</button>
+      </div>
+      <form id="authForm" onsubmit="submitAuth(event)">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="authEmail" class="form-control" required placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="authPassword" class="form-control" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;" id="authSubmitBtn">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Seham & Amelia. Crafted with passion.</p>
+    </div>
+  </footer>
+
+  <!-- Chatbot HTML -->
+  <button class="chatbot-toggle" id="chatToggle">
+    <i class="fa-solid fa-comment-dots"></i>
+  </button>
+
+  <div class="chatbot-window" id="chatWindow">
+    <div class="chat-header">
+      <h4>
+        <div class="dot"></div> Portfolio Assistant
+      </h4>
+      <button id="closeChat" style="background: none; border: none; color: white; cursor: pointer;"><i
+          class="fa-solid fa-close"></i></button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-message bot">Hello! I'm the portfolio assistant. Do you have any questions about Seham or Amelia?
+      </div>
+      <div class="typing-indicator" id="typingIndicator">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off">
+      <button id="chatSend"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="chatbot/main.js"></script>
+</body>
+
+</html>
