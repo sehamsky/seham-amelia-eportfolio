@@ -55,7 +55,7 @@ seham-amelia-eportfolio/
 └── README.md
 ```
 
-*The structure above is a reference. Update it to match the actual repository files.*
+
 
 ##  Getting Started
 
