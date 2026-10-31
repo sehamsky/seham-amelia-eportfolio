@@ -23,3 +23,19 @@
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+# Sensitive configuration files
+mail_config.php
+.env
+.env.*
+
+# Dependencies
+node_modules/
+vendor/
+
+# Local development
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
